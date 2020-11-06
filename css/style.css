@@ -1,0 +1,336 @@
+@charset "UTF-8";
+
+
+/* css 함수 데이터 */
+:root {
+
+}
+
+.container {
+    /* width: 60.8%;  1168 나누기 1920 */
+    max-width: 1168px;
+    height: inherit;
+    padding: 0 16px;
+    margin: 0 auto;
+}
+
+/* 헤더 */
+.header__contents {
+    width: 100%
+}
+
+.header__logo {
+    float: left;
+}
+
+.header__logo--link {
+    width: 80px;
+    height: 80px;
+    display: block;
+    background: url('../image/webclass__logo.jpg') no-repeat;
+    background-size: 80px 80px;
+}
+
+.header__menu {
+    float: right;
+}
+
+.header__menu--link {
+    display: block;
+    padding: 27px 20px;
+}
+
+.header__menu--line {
+    display: block;
+    margin-bottom: 10px;
+    width: 40px;
+    height: 2px;
+    background-color: #000000;
+}
+
+.header__menu--line:last-child {
+    margin-bottom: 0;
+}
+
+/* 메인 비주얼 */
+.visualbanner__menu--list {
+    position: relative;
+    overflow: hidden;
+}
+
+.visualbanner__menu--list img {
+    vertical-align: top;
+    /* width: 100%; */
+    min-width: 100%;
+}
+
+.visualbanner__container {
+    /* width: 60.8%;  1168 나누기 1920 */
+    max-width: 1168px;
+    padding: 0 16px;
+    margin: 0 auto;
+	position: absolute;
+	top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+/* 메인 비주얼 타이틀 */
+.visualbanner__row {
+    /* font-size: 48px; */
+    font-size: 3em;
+    display: block;
+    color: #ffffff;
+    margin-top: 107px;
+}
+
+.visualbanner__title {
+    display: block;
+}
+
+/* 외부링크 */
+.visualbanner__external--link {
+    display: block;
+    margin-top: 73px;
+}
+
+.visualbanner__external--link::after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+.github__link {
+    width: 48px;
+    height: 48px;
+    display: block;
+    background-image: url('../image/github__logo.png');
+    background-size: 48px 48px;
+    float: left;
+    margin-right: 20px;
+    filter: invert(100%);
+}
+
+.velog__link {
+    width: 48px;
+    height: 48px;
+    display: block;
+    background-image: url('../image/velog__logo.png');
+    background-size: 48px 48px;
+    float: left;
+    margin-right: 20px;
+}
+
+.behance__link {
+    width: 48px;
+    height: 48px;
+    display: block;
+    background-image: url('../image/behance__logo.png');
+    background-size: 48px 48px;
+    float: left;
+}
+
+/* 콘텐츠 01 */
+.work__category {
+    width: 100%;
+}
+
+.work__margin--collapse {
+    display: inline-block;
+    width: 100%;
+}
+
+.work__contents--margin {
+    margin: 32px 0;
+    width: 100%;
+}
+
+.work__category--link {
+    border: 1px solid black;
+    width: 14.3%; /* 168 나누기 1168 */
+    height: 56px;
+    border-radius: 32px;
+    float: left;
+    margin-right: 32px;
+}
+
+.work__category--title {
+    font-size: 1.5em; /* 24px */
+    line-height: 56px;
+    text-align: center;
+    text-transform: capitalize;
+}
+
+.explanation__margin--collapse {
+    display: inline-block;
+    width: 100%;
+}
+
+.work__title {
+    font-size: 48px;
+    font-weight: 400;
+    display: block;
+    margin-top: 64px;
+    margin-bottom: 16px;
+}
+
+.work__titleexplanation {
+    font-size: 1.5em; /* 24px */
+    margin-bottom: 64px;
+}
+
+.work__menu {
+    width: 100%; /* 1168px 나누기 1168px */
+}
+.work__menu--list {
+    float: left;
+    width: 31.5%; /* 368 나누기 1168 */
+    margin-right: 2.7%; /* 32 나누기 1168 */
+    margin-bottom: 2.7%; /* 32 나누기 1168 */
+}
+
+.work__menu--list:nth-child(3n) {
+    margin-right: 0;
+}
+
+.work__menu--list a img {
+    /* min-width: 100%; */
+    width: 100%;
+    /* height: 368px; */
+    vertical-align: top;
+    filter: invert(100%);
+}
+
+/* 푸터 영역 */
+.footer {
+    background-color: #000000;
+}
+
+.footer__copyright {
+    line-height: 80px;
+    margin-top: 100px;
+}
+
+.copyright__margin--collapse {
+    color: #ffffff;
+}
+
+.footer__copyright--title {
+    float: left;
+}
+
+.footer__copyright--explanation {
+    float: right;
+}
+
+
+
+
+/* 반응형 구현하기 */
+
+/* 데스크탑: 최대 ~ 1024px 까지 */
+@media screen and (min-width: 1024px) {
+    .container {
+        padding: 0 32px;
+    }
+    .visualbanner__container {
+        padding: 0 32px;
+    }
+}
+
+/* 테블릿: 1023px ~ 768px 까지 */ 
+@media screen and (max-width: 1023px) and (min-width: 768px) {
+    body {background-color: lime;}
+    .container {
+        max-width: 1024px;
+        /* max-width: 100%; */
+        height: inherit;
+        padding: 0 40px;
+        margin: 0 auto;
+    }
+    .header__contents {
+        width: 100%;
+    }
+    .visualbanner__container {
+        max-width: 1024px;
+        /* max-width: 100%; */
+        padding: 0 40px;
+        margin: 0 auto;
+    }
+    .visualbanner__row {
+        margin-top: 57px;
+    }
+    .visualbanner__external--link {
+        display: block;
+        margin-top: 23px;
+    }
+    .github__link {
+        width: 32px;
+        height: 32px;
+        background-size: 32px 32px;
+    }
+    .velog__link {
+        width: 32px;
+        height: 32px;
+        background-size: 32px 32px;
+    }
+    .behance__link {
+        width: 32px;
+        height: 32px;
+        background-size: 32px 32px;
+    }
+    .visualbanner__menu--list img {
+        width: 100%;
+    }
+    .visualbanner__title {
+        font-size: 28px;
+    }
+
+    
+}
+
+/* 스마트폰: 767px ~ 최소까지 */
+@media screen and (max-width: 767px) {
+    body {background-color: blue;}
+    .container {
+        max-width: 1168px;
+        height: inherit;
+        padding: 0 32px;
+        margin: 0 auto;
+    }
+    .visualbanner__container {
+        max-width: 1168px;
+        padding: 0 32px;
+        margin: 0 auto;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+    }
+    .work__category--link {
+        border: 1px solid black;
+        width: 120px;
+        height: 56px;
+        border-radius: 32px;
+        float: left;
+        margin-right: 20px;
+    }
+    .work__titleexplanation {
+        font-size: 1.5em;
+        margin-bottom: 32px;
+        width: 339px;
+    }
+    .header__logo--link {
+        width: 60px;
+        height: 60px;
+        display: block;
+        background: url(../image/webclass__logo.jpg) no-repeat;
+        background-size: 60px 60px;
+    }
+    .header__menu--link {
+        display: block;
+        padding: 17px 20px;
+    }
+}
