@@ -10,8 +10,8 @@
     <meta>
     <title>포트폴리오</title>
     <link rel="stylesheet" href="./css/reset.css">
-    <link rel="stylesheet" href="./css/clearboth.css">
     <link rel="stylesheet" href="./css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
 </head>
 <body>
     <div id="wrap">
@@ -19,20 +19,22 @@
         <header id="header">
             <section class="header">
                 <div class="container">
-                    <section class="header__contents">
-                        <h1 class="header__logo">
-                            <a class="header__logo--link" href="" title="로고">
-                                <span class="ir_pm">웹클래스</span>
-                            </a>
-                        </h1>
-                        <div class="header__menu">
-                            <a class="header__menu--link" href="#">
-                                <span class="header__menu--line"></span>
-                                <span class="header__menu--line"></span>
-                                <span class="header__menu--line"></span>
-                            </a>
-                        </div>
-                    </section>
+                    <div class="row">
+                        <!-- 헤더__콘텐츠 -->
+                        <section class="header__contents clearboth">
+                            <span class="ir_su">웹사이트 상단</span>
+                            <h1 class="header__logo">
+                                <a href="#">
+                                    <img src="./image/webclass__logo.jpg" alt="웹클래스">
+                                </a>
+                            </h1>
+                            <div class="header__menubar">
+                                <a href="#">
+                                    <span class="header__menu"></span>
+                                </a>
+                            </div>
+                        </section>
+                    </div>
                 </div>
             </section>
         </header> 
@@ -40,100 +42,144 @@
         <!-- 메인 -->
         <main id="main">
             <section class="main">
-                <section class="visualbanner">
-                    <!-- 메인 비주얼 -->
-                    <div class="visualbanner__contents">
-                        <ul class="visualbanner__menu">
-                            <li class="visualbanner__menu--list">
-                                <img src="./image/main__vbimg.jpg" alt="메인 슬라이더 배너" title="이미지">
-                                <div class="visualbanner__container">
-                                    <!-- 메인 비주얼 타이틀 -->
-                                    <div class="visualbanner__row">
-                                        <strong class="visualbanner__title">A: 어디까지 가세요?</strong>
-                                        <strong class="visualbanner__title">B: 합격역이요</strong>
-                                    </div>
-                                    <!-- 외부링크 -->
-                                    <div class="visualbanner__external--link">
-                                        <a class="github__link" href="" title="깃허브"></a>
-                                        <a class="velog__link" href="" title="벨로그"></a>
-                                        <a class="behance__link" href="" title="비핸스"></a>
+                <!-- 메인 슬라이드 배너 -->
+                <section class="slidebanner">
+                    <span class="ir_su">메인 슬라이드 배너</span>
+                    <div class="slidebanner__contents">
+                        <ul class="slidebanner__banner">
+                            <li class="slidebanner__bannerlist">
+                                <figure>
+                                    <img src="./image/main__vbimg.jpg" alt="">
+                                </figure>
+                                <div class="slidebanner__titlecontents">
+                                    <div class="slidebanner__group">
+                                        <div class="slidebanner__titlegroup">
+                                            <strong class="slidebanner__title">A: 어디까지 가세요?</strong>
+                                            <strong class="slidebanner__title">B: 합격역으로 가주세요.</strong>
+                                        </div>
                                     </div>
                                 </div>
                             </li>
                         </ul>
+                        <!-- 메인 슬라이드 아이콘 -->
+                        <div class="slideicon">
+                            <div class="slideicon__contents">
+                                <div class="slideicon__icon clearboth">
+                                    <a href="">
+                                        <span class="slideicon__iconlist ir_pm">깃허브</span>
+                                    </a>
+                                    <a href="">
+                                        <span class="slideicon__iconlist ir_pm">벨로그</span>
+                                    </a>
+                                    <a href="">
+                                        <span class="slideicon__iconlist ir_pm">비핸스</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </section>
     
                 <!-- 콘텐츠 01 -->
-                <section class="main__contents01">
-                    <div class="container">
-                        <section class="work__category">
-                            <!-- 작업물 카테고리 -->
-                            <div class="work__margin--collapse">
-                                <ul class="work__contents--margin clearboth">
-                                    <li class="work__category--link">
-                                        <a class="work__link" href="">
-                                            <h3 class="work__category--title">work</h3>
-                                        </a>
-                                    </li>
-                                    <li class="work__category--link">
-                                        <a class="work__link" href="">
-                                            <h3 class="work__category--title">career</h3>
-                                        </a>
-                                    </li>
-                                    <li class="work__category--link">
-                                        <a class="work__link" href="">
-                                            <h3 class="work__category--title">profile</h3>
-                                        </a>
-                                    </li>
-                                </ul>
-                            </div>
-                            <!-- 작업물 콘텐츠 -->
-                            <div class="work__contents01">
-                                <!-- 작업물 타이틀 영역 -->
-                                <div class="work__explanation">
-                                    <div class="explanation__margin--collapse">
-                                        <strong class="work__title">작업물</strong>
-                                        <p class="work__titleexplanation">html, css, javascript 공부하면서 제작했던 작업물입니다.</p>
-                                    </div>
-                                </div>
-                                <!-- 작업물 소개 -->
-                                <div class="work__work">
-                                    <ul class="work__menu clearboth">
-                                        <li class="work__menu--list">
-                                            <a href="#">
-                                                <img src="./image/webclass__logo.jpg" alt="">
-                                            </a>
+                <section class="contents01">
+                    <div class="contents01__row">
+                        <div class="container">
+                            <div class="row">
+                                <section class="cont01">
+                                    <ul class="cont01__menu clearboth">
+                                        <li class="cont01__menulist">
+                                            <a class="cont01__title" href="#">work</a>
+                                            <!-- 콘텐츠 01__작업물 -->
+                                            <div class="work__contents01">
+                                                <span class="ir_su">작업물</span>
+                                                <div class="work__title">
+                                                    <h3>작업물</h3>
+                                                    <p>html, css, javascript 공부하면서 제작했던 작업물입니다.</p>
+                                                </div>
+                                                <ul class="work__menu clearboth">
+                                                    <li class="work__menulist">
+                                                        <a href="">
+                                                            <img src="http://placehold.it/300x300" alt="작업물">
+                                                        </a>
+                                                    </li>
+                                                    <li class="work__menulist">
+                                                        <a href="">
+                                                            <img src="http://placehold.it/300x300" alt="작업물">
+                                                        </a>
+                                                    </li>
+                                                    <li class="work__menulist">
+                                                        <a href="">
+                                                            <img src="http://placehold.it/300x300" alt="작업물">
+                                                        </a>
+                                                    </li>
+                                                    <li class="work__menulist">
+                                                        <a href="">
+                                                            <img src="http://placehold.it/300x300" alt="작업물">
+                                                        </a>
+                                                    </li>
+                                                    <li class="work__menulist">
+                                                        <a href="">
+                                                            <img src="http://placehold.it/300x300" alt="작업물">
+                                                        </a>
+                                                    </li>
+                                                    <li class="work__menulist">
+                                                        <a href="">
+                                                            <img src="http://placehold.it/300x300" alt="작업물">
+                                                        </a>
+                                                    </li>
+                                                    <li class="work__menulist">
+                                                        <a href="">
+                                                            <img src="http://placehold.it/300x300" alt="작업물">
+                                                        </a>
+                                                    </li>
+                                                    <li class="work__menulist">
+                                                        <a href="">
+                                                            <img src="http://placehold.it/300x300" alt="작업물">
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </div>
                                         </li>
-                                        <li class="work__menu--list">
-                                            <a href="#">
-                                                <img src="./image/webclass__logo.jpg" alt="">
-                                            </a>
+                                        <li class="cont01__menulist">
+                                            <a class="cont01__title" href="#">career</a>
+                                            <!-- 콘텐츠 01__커리어 -->
+                                            <!-- <div class="work__contents01">
+                                                <span class="ir_su">커리어</span>
+                                                <div class="work__title">
+                                                    <h3>커리어</h3>
+                                                    <p>프로젝트를 진행해보았습니다.</p>
+                                                </div>
+                                                <ul class="work__menu">
+                                                    <li class="work__menulist">
+                                                        <a href="">
+                                                            <img src="./image/webclass__logo.jpg" alt="작업물">
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </div> -->
                                         </li>
-                                        <li class="work__menu--list">
-                                            <a href="#">
-                                                <img src="./image/webclass__logo.jpg" alt="">
-                                            </a>
-                                        </li>
-                                        <li class="work__menu--list">
-                                            <a href="#">
-                                                <img src="./image/webclass__logo.jpg" alt="">
-                                            </a>
-                                        </li>
-                                        <li class="work__menu--list">
-                                            <a href="#">
-                                                <img src="./image/webclass__logo.jpg" alt="">
-                                            </a>
-                                        </li>
-                                        <li class="work__menu--list">
-                                            <a href="#">
-                                                <img src="./image/webclass__logo.jpg" alt="">
-                                            </a>
+                                        <li class="cont01__menulist">
+                                            <a class="cont01__title" href="#">profile</a>
+                                            <!-- 콘텐츠 01__프로필 -->
+                                            <!-- <div class="work__contents01">
+                                                <span class="ir_su">프로필</span>
+                                                <div class="work__title">
+                                                    <h3>프로필</h3>
+                                                    <p>저를 소개합니다.</p>
+                                                </div>
+                                                <ul class="work__menu">
+                                                    <li class="work__menulist">
+                                                        <a href="">
+                                                            <img src="./image/webclass__logo.jpg" alt="작업물">
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </div> -->
                                         </li>
                                     </ul>
-                                </div>
+                                </section>
                             </div>
-                        </section>
+                        </div>
                     </div>
                 </section>
             </section>
@@ -141,18 +187,19 @@
 
         <!-- 푸터 -->
         <footer id="footer">
-            <section class="footer">
+            <div class="footer">
                 <div class="container">
-                    <section class="footer__contents">
-                        <address class="footer__copyright clearboth">
-                            <div class="copyright__margin--collapse">
-                                <span class="footer__copyright--title">@kimseunggu</span>
-                                <span class="footer__copyright--explanation">이 사이트는 비상업적인 포트폴리오 용도입니다.</span>
-                            </div>
-                        </address>
-                    </section>
+                    <div class="row">
+                        <!-- 푸터__콘텐츠 -->
+                        <section class="footer01">
+                            <address class="footer01__copyright clearboth">
+                                <span class="footer01__title">@kimseunggu</span>
+                                <span class="footer01__explanation">이 사이트는 비상업적인 포트폴리오 용도입니다.</span>
+                            </address>
+                        </section>
+                    </div>
                 </div>
-            </section>
+            </div>
         </footer>
     </div>
 </body>
